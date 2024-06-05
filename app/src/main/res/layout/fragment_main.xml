@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="359dp"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:background="@android:color/white"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Botão "Mapa" -->
+        <Button
+            android:id="@+id/btnOpenMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="4dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:drawablePadding="8dp"
+            android:elevation="4dp"
+            android:text="Open Map"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Botão "Disciplinas" -->
+        <Button
+            android:id="@+id/btnOpenDisciplinas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="4dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:drawablePadding="8dp"
+            android:elevation="4dp"
+            android:text="View Subjects"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Botão "Logout" -->
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="4dp"
+            android:background="@drawable/button_background"
+            android:drawablePadding="8dp"
+            android:elevation="4dp"
+            android:text="Log Out"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</FrameLayout>

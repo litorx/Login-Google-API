@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">login</string>
+    <string name="hello_blank_fragment">Olá fragmento em branco</string>
+    <string name="google_maps_key">AIzaSyDpJXyBSxtGdmwhCh2d7GPu9TuCikNT_7Q</string>
+</resources>
