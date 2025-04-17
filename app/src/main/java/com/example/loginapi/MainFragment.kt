@@ -14,7 +14,7 @@ class MainFragment : Fragment() {
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
 
-    // Initialize FirebaseAuth
+    
     private lateinit var auth: FirebaseAuth
 
     override fun onCreateView(
@@ -28,7 +28,7 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Initialize FirebaseAuth in onViewCreated
+    
         auth = FirebaseAuth.getInstance()
 
         binding.btnOpenMap.setOnClickListener {
@@ -40,7 +40,7 @@ class MainFragment : Fragment() {
         }
 
         binding.btnSignOut.setOnClickListener {
-            // Call the sign-out function
+           
             signOut()
         }
     }
@@ -50,7 +50,7 @@ class MainFragment : Fragment() {
         _binding = null
     }
 
-    // Function to sign out
+
     private fun signOut() {
         auth.signOut()
         findNavController().navigate(R.id.action_mainFragment_to_loginGraph)
