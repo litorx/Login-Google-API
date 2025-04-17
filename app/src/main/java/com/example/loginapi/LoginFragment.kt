@@ -35,7 +35,7 @@ class LoginFragment : Fragment() {
             val password = binding.passwordEditText.text.toString()
 
             if (email.isBlank() || password.isBlank()) {
-                // Show a warning if email or password is empty
+                
                 Toast.makeText(requireContext(), "Please fill in all fields", Toast.LENGTH_SHORT).show()
             } else {
                 auth.signInWithEmailAndPassword(email, password)
@@ -43,7 +43,7 @@ class LoginFragment : Fragment() {
                         if (task.isSuccessful) {
                             findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
                         } else {
-                            // Handle login failure
+                            
                         }
                     }
             }
